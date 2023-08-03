@@ -1,12 +1,11 @@
 # docker-compose.yml file
 version: '3'
-
 services:
   # The load balancer
   nginx:
     image: nginx:1.16.0-alpine
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx.config:/etc/nginx/nginx.config
     ports:
       - "8080:80"
 
