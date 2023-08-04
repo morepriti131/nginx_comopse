@@ -10,5 +10,3 @@ services:
   # The web server1
   server1:
     image: nginx:1.16.0-alpine
-    volumes:
-      - ./index.html:/usr/share/nginx/index.html
