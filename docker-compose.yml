@@ -4,9 +4,7 @@ services:
   # The load balancer
   nginx:
     image: nginx:1.16.0-alpine
-    volumes:
-      - ./:/usr/share/nginx/html
-    ports:
+        ports:
       - "8080:80"
 
   # The web server1
