@@ -5,7 +5,7 @@ services:
   nginx:
     image: nginx:1.16.0-alpine
     volumes:
-      - ./nginx.config:/usr/share/nginx/html
+      - ./:/usr/share/nginx/html
     ports:
       - "8080:80"
 
@@ -13,4 +13,4 @@ services:
   server1:
     image: nginx:1.16.0-alpine
     volumes:
-      - ./index.html:/usr/share/nginx/html/index.html
+      - ./:/usr/share/nginx/html/index.html
