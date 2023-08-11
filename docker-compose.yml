@@ -3,6 +3,6 @@ Services:
   nginx:
     image:nginx:1.16.0_alpine
     volumes:
-      - ./:/etc/nginx/html/ 
+      - ./:/etc/nginx/html
     ports:
       - "8080:80"
